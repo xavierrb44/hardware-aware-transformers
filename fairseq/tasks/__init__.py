@@ -14,6 +14,7 @@ TASK_CLASS_NAMES = set()
 
 
 def setup_task(args, **kwargs):
+    print("args.task = ", args.task)
     return TASK_REGISTRY[args.task].setup_task(args, **kwargs)
 
 
